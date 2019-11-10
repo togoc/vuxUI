@@ -9,7 +9,7 @@
         index="/home"
         :selected="index=='/home'?true:false"
       >
-        <icon slot="icon" type="success"></icon>
+        <span slot="icon" class="iconfont icon-shouye"></span>
         <label slot="label">Home</label>
       </TabbarItem>
       <TabbarItem
@@ -18,7 +18,7 @@
         index="/demo"
         :selected="index=='/demo'?true:false"
       >
-        <icon slot="icon" type="success"></icon>
+        <span slot="icon" class="iconfont icon-list"></span>
         <label slot="label">Demo List</label>
       </TabbarItem>
     </Tabbar>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { Icon, XHeader, Tabbar, TabbarItem } from "vux";
+import { XHeader, Tabbar, TabbarItem } from "vux";
 export default {
   data() {
     return {};
@@ -42,7 +42,6 @@ export default {
     }
   },
   components: {
-    Icon,
     Tabbar,
     TabbarItem,
     XHeader
@@ -50,13 +49,12 @@ export default {
 };
 </script>
 <style scoped>
-#app{
-
-}
 .weui-tabbar {
   position: fixed;
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 </style>

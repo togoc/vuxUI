@@ -144,3 +144,9 @@ body {
 .weui-cell__ft {
     cursor: pointer !important;
 }
+
+.weui-grid__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

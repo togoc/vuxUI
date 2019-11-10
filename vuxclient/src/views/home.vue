@@ -13,8 +13,8 @@
   </div>
 </template>
 <script>
-import { Group, Cell } from "vux";
-import { Icon } from "vux";
+import "../../public/icons-home/iconfont.css";
+import { Icon,Group, Cell } from "vux";
 export default {
   name: "home",
   props: {},

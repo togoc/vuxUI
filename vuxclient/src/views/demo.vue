@@ -1,33 +1,48 @@
 <template>
   <div class="demo">
-    <group>
-      <cell title="Live Demo" value="value" is-link>
-        <icon slot="icon" type="success"></icon>Github
-      </cell>
-      <cell title="Github" value="value" is-link>
-        <icon slot="icon" type="success"></icon>Star me
-      </cell>
-    </group>
+    <grid :cols="cols">
+      <grid-item label="Actionsheet" link="/actionsheet">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+      <grid-item label="Alert" link="/lert">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+      <grid-item label="Badge" link="/buttontab">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+      <grid-item label="Blur" link="/buttontab">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+      <grid-item label="Button Tab" link="/buttontab">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+      <grid-item label="Calendar Tab" link="/calendar">
+        <span slot="icon" class="iconfont icon-list"></span>
+      </grid-item>
+    </grid>
   </div>
 </template>
 <script>
-import { Group, Cell } from "vux";
-import { Icon } from "vux";
+import { Grid, GridItem } from "vux";
+import "../../public/icons-home/iconfont.css";
 export default {
-  name: "demo",
-  props: {},
-  methods: {},
+  data() {
+    return {
+      cols: 4
+    };
+  },
   components: {
-    Group,
-    Cell,
-    Icon
+    Grid,
+    GridItem
   }
 };
 </script>
 
 <style scoped>
 .demo {
-  padding-top: 60px;
   box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 </style>
