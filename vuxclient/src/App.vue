@@ -16,7 +16,7 @@
         class="tabbarItem1"
         link="/demo"
         index="/demo"
-        :selected="index=='/demo'?true:false"
+        :selected="index!='/home'?true:false"
       >
         <span slot="icon" class="iconfont icon-list"></span>
         <label slot="label">Demo List</label>
@@ -28,6 +28,7 @@
 <script>
 import { XHeader, Tabbar, TabbarItem } from "vux";
 export default {
+  name:"app",
   data() {
     return {};
   },

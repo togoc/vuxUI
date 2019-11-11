@@ -150,3 +150,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* .weui-switch:checked,
+.weui-switch-cp__input:checked~.weui-switch-cp__box {
+    border-color: red !important;
+    background-color: red !important;
+} */
+.weui-switch {
+    cursor: pointer;
+}
