@@ -43,17 +43,28 @@ export default {
   computed: {
     demoList() {
       let arr = [];
+      let arr1 = [];
       this.prototypeList.forEach((elemen, index) => {
         arr[index] = elemen;
         arr[index].label = elemen["link"]
           .slice(1)
-          .replace(/^[a-z]/, elemen["link"][1].toUpperCase());
+          .replace(/^[a-z]/i, elemen["link"][1].toUpperCase());
+
+        arr1[index] = arr[index].label;
+      });
+      //按字母排序
+      arr1.sort();
+      arr1.forEach((item, index) => {
+        arr.forEach((item1, index1) => {
+          if (item == item1.label) {
+            [arr[index], arr[index1]] = [arr[index1], arr[index]];
+          }
+        });
       });
       return arr;
     }
   },
-  created() {
-  },
+  created() {},
   components: {
     Grid,
     GridItem
