@@ -15,8 +15,34 @@ import cell from '../components/cell'
 import cellform from '../components/cellform'
 import check from '../components/check'
 import divider from '../components/divider'
+import confirm from '../components/confirm'
 
 Vue.use(VueRouter)
+
+let children = [
+    { path: "", name: "demoList", component: demoList },
+    { path: "/actionsheet", name: "actionsheet", component: actionsheet, class: "iconfont icon-list" },
+    { path: "/alert", name: "alert", component: alert, class: "iconfont icon-list" },
+    { path: "/buttontab", name: "buttontab", component: buttontab, class: "iconfont icon-list" },
+    { path: "/blur", name: "blur", component: blur, class: "iconfont icon-list" },
+    { path: "/calendar", name: "calendar", component: calendar, class: "iconfont icon-list" },
+    { path: "/card", name: "card", component: card, class: "iconfont icon-list" },
+    { path: "/badge", name: "badge", component: badge, class: "iconfont icon-list" },
+    { path: "/xswitch", name: "xswitch", component: xswitch, class: "iconfont icon-list" },
+    { path: "/cell", name: "cellbox", component: cell, class: "iconfont icon-list" },
+    { path: "/cellform", name: "cellform", component: cellform, class: "iconfont icon-list" },
+    { path: "/check", name: "check", component: check, class: "iconfont icon-list" },
+    { path: "/divider", name: "divider", component: divider, class: "iconfont icon-list" },
+    { path: "/confirm", name: "confirm", component: confirm, class: "iconfont icon-list" },
+]
+
+//储存给demoList
+localStorage.removeItem("demoList")
+let prototypeList = JSON.parse(JSON.stringify(children)).slice(1)
+prototypeList.forEach((item) => {
+    delete item.component
+})
+localStorage.setItem("demoList", JSON.stringify(prototypeList))
 
 const routes = [{
     path: '/',
@@ -28,21 +54,7 @@ const routes = [{
 }, {
     path: "/demo",
     component: demo,
-    children: [
-        { path: "", name: "demoList", component: demoList },
-        { path: "/actionsheet", name: "actionsheet", component: actionsheet },
-        { path: "/alert", name: "alert", component: alert },
-        { path: "/buttontab", name: "buttontab", component: buttontab },
-        { path: "/blur", name: "blur", component: blur },
-        { path: "/calendar", name: "calendar", component: calendar },
-        { path: "/card", name: "card", component: card },
-        { path: "/badge", name: "badge", component: badge },
-        { path: "/xswitch", name: "xswitch", component: xswitch },
-        { path: "/cell", name: "cellbox", component: cell },
-        { path: "/cellform", name: "cellform", component: cellform },
-        { path: "/check", name: "check", component: check },
-        { path: "/divider", name: "divider", component: divider },
-    ]
+    children
 }]
 
 const router = new VueRouter({
@@ -50,5 +62,6 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
+
 
 export default router

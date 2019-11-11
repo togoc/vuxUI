@@ -163,3 +163,6 @@ a {
 .weui-switch {
     cursor: pointer;
 }
+html{
+    scroll-behavior: smooth;
+}

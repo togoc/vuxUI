@@ -7,7 +7,7 @@
         v-for="(item, index) in demoList"
         :key="index"
       >
-        <span slot="icon" class="iconfont icon-list"></span>
+        <span slot="icon" :class="item.class"></span>
       </grid-item>
     </grid>
   </div>
@@ -25,32 +25,26 @@ export default {
       // { label: "Divider", link: "/divider", class: "iconfont icon-list" }
       // ],
       prototypeList: [
-        { link: "/divider", class: "iconfont icon-list" },
-        { link: "/check", class: "iconfont icon-list" },
-        { link: "/cellform", class: "iconfont icon-list" },
-        { link: "/cell", class: "iconfont icon-list" },
-        { link: "/xswitch", class: "iconfont icon-list" },
-        { link: "/card", class: "iconfont icon-list" },
-        { link: "/calendar", class: "iconfont icon-list" },
-        { link: "/buttontab", class: "iconfont icon-list" },
-        { link: "/blur", class: "iconfont icon-list" },
-        { link: "/badge", class: "iconfont icon-list" },
-        { link: "/alert", class: "iconfont icon-list" },
-        { link: "/actionsheet", class: "iconfont icon-list" }
+        // { path: "/actionsheet", name: "actionsheet", component: actionsheet },
       ]
     };
   },
   computed: {
     demoList() {
+      let prototypeList = JSON.parse(localStorage.getItem("demoList"));
       let arr = [];
       let arr1 = [];
-      this.prototypeList.forEach((elemen, index) => {
+      prototypeList.forEach((elemen, index) => {
         arr[index] = elemen;
-        arr[index].label = elemen["link"]
-          .slice(1)
-          .replace(/^[a-z]/i, elemen["link"][1].toUpperCase());
-
+        arr[index].class = elemen.class;
+        arr[index].link = elemen.path;
+        arr[index].label = elemen["name"].replace(
+          /^[a-z]/i,
+          elemen["name"][0].toUpperCase()
+        );
         arr1[index] = arr[index].label;
+        delete arr[index]["path"];
+        delete arr[index]["name"];
       });
       //按字母排序
       arr1.sort();
