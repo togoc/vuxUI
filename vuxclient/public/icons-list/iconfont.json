@@ -1,0 +1,100 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15381",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "701898",
+      "name": "blur",
+      "font_class": "blur",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "836720",
+      "name": "list",
+      "font_class": "list",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "1486839",
+      "name": "提示",
+      "font_class": "tishi",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1567553",
+      "name": "list",
+      "font_class": "list1",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "1857381",
+      "name": "btn-on",
+      "font_class": "btn-on",
+      "unicode": "e56a",
+      "unicode_decimal": 58730
+    },
+    {
+      "icon_id": "5450378",
+      "name": "card",
+      "font_class": "card",
+      "unicode": "e784",
+      "unicode_decimal": 59268
+    },
+    {
+      "icon_id": "6151155",
+      "name": "calendar alt-fill",
+      "font_class": "calendaralt-fill",
+      "unicode": "e7d8",
+      "unicode_decimal": 59352
+    },
+    {
+      "icon_id": "7596479",
+      "name": "24gl-checklist",
+      "font_class": "24gl-checklist",
+      "unicode": "eb00",
+      "unicode_decimal": 60160
+    },
+    {
+      "icon_id": "7684907",
+      "name": "timesheet",
+      "font_class": "timesheet",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "8777388",
+      "name": "check",
+      "font_class": "icon-test",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "11249689",
+      "name": "colors",
+      "font_class": "colors",
+      "unicode": "e838",
+      "unicode_decimal": 59448
+    },
+    {
+      "icon_id": "11435731",
+      "name": "confirm 确认 成功14",
+      "font_class": "icon-test1",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    }
+  ]
+}

@@ -16,6 +16,7 @@
 <script>
 import { Grid, GridItem } from "vux";
 import "../../public/icons-home/iconfont.css";
+import "../../public/icons-list/iconfont.css";
 export default {
   name: "demolist",
   data() {

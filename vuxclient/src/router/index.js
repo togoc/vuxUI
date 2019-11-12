@@ -21,19 +21,19 @@ Vue.use(VueRouter)
 
 let children = [
     { path: "", name: "demoList", component: demoList },
-    { path: "/actionsheet", name: "actionsheet", component: actionsheet, class: "iconfont icon-list" },
-    { path: "/alert", name: "alert", component: alert, class: "iconfont icon-list" },
-    { path: "/buttontab", name: "buttontab", component: buttontab, class: "iconfont icon-list" },
-    { path: "/blur", name: "blur", component: blur, class: "iconfont icon-list" },
-    { path: "/calendar", name: "calendar", component: calendar, class: "iconfont icon-list" },
-    { path: "/card", name: "card", component: card, class: "iconfont icon-list" },
-    { path: "/badge", name: "badge", component: badge, class: "iconfont icon-list" },
+    { path: "/actionsheet", name: "actionsheet", component: actionsheet, class: "iconfont icon-timesheet" },
+    { path: "/alert", name: "alert", component: alert, class: "iconfont icon-jinggao" },
+    { path: "/buttontab", name: "buttontab", component: buttontab, class: "iconfont icon-btn-on" },
+    { path: "/blur", name: "blur", component: blur, class: "iconfont icon-blur" },
+    { path: "/calendar", name: "calendar", component: calendar, class: "iconfont icon-calendaralt-fill" },
+    { path: "/card", name: "card", component: card, class: "iconfont icon-card" },
+    { path: "/badge", name: "badge", component: badge, class: "iconfont icon-tishi" },
     { path: "/xswitch", name: "xswitch", component: xswitch, class: "iconfont icon-list" },
-    { path: "/cell", name: "cellbox", component: cell, class: "iconfont icon-list" },
-    { path: "/cellform", name: "cellform", component: cellform, class: "iconfont icon-list" },
-    { path: "/check", name: "check", component: check, class: "iconfont icon-list" },
+    { path: "/cell", name: "cellbox", component: cell, class: "iconfont icon-list1" },
+    { path: "/cellform", name: "cellform", component: cellform, class: "iconfont icon-timesheet" },
+    { path: "/check", name: "check", component: check, class: "iconfont icon-icon-test" },
     { path: "/divider", name: "divider", component: divider, class: "iconfont icon-list" },
-    { path: "/confirm", name: "confirm", component: confirm, class: "iconfont icon-list" },
+    { path: "/confirm", name: "confirm", component: confirm, class: "iconfont icon-icon-test1" },
 ]
 
 //储存给demoList
