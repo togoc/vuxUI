@@ -1,4 +1,6 @@
 # vuxUI
+![home](images/home.png)
+![home](images/demoList.png)
 
 ## 配置
 * 环境: Vuecli3
